@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+main#portada{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#portada header{
+    background-color: inherit;
+}
+
+header{
+    background-color: #2C105C;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+nav{
+    background-color: #DC9ADA;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside{
+    background-color: #0000;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+article{
+    background-color: #2C105C;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+footer{
+    background-color: #DC9ADA;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+h3{
+    font-family: fantasy;
+    font-size: 150px;
+    color: blanchedalmond;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+h1{
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
